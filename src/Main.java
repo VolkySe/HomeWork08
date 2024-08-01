@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         System.out.printf("Задача 1 %n"); //или System.out.println("Задача 1 ");
@@ -14,25 +12,49 @@ public class Main {
         System.out.println();
 
         System.out.printf("Задача 2 %n");
-        System.out.println(Arrays.toString(arrFirst));
-        System.out.println(Arrays.toString(arrSecond));
-        System.out.println(Arrays.toString(arrThird));
-
+        for (int i = 0; i < arrFirst.length; i++) {
+            if (i != arrFirst.length - 1) {
+                System.out.print(arrFirst[i] + ", ");
+            } else {
+                System.out.println(arrFirst[i]);
+            }
+        }
+        for (int i = 0; i < arrSecond.length; i++) {
+            if (i != arrSecond.length - 1) {
+                System.out.print(arrSecond[i] + ", ");
+            } else {
+                System.out.println(arrSecond[i]);
+            }
+        }
+        for (int i = 0; i < arrThird.length; i++) {
+            if (i != arrThird.length - 1) {
+                System.out.print(arrThird[i] + ", ");
+            } else {
+                System.out.println(arrThird[i]);
+            }
+        }
         System.out.println();
         System.out.printf("Задача 3 %n");
-        int counter;
-        for (counter = arrFirst.length - 1; counter >= 1; counter--) {
-            System.out.print(arrFirst[counter] + ", ");
+        for (int i = arrFirst.length - 1; i >=0; i--) {
+            if (i != 0) {
+                System.out.print(arrFirst[i] + ", ");
+            } else {
+                System.out.println(arrFirst[i]);
+            }
         }
-        System.out.println(arrFirst[counter]);
-        for (counter = arrSecond.length - 1; counter >= 1; counter--) {
-            System.out.print(arrSecond[counter] + ", ");
+        for (int i = arrSecond.length - 1; i >=0; i--) {
+            if (i != 0) {
+                System.out.print(arrSecond[i] + ", ");
+            } else {
+                System.out.println(arrSecond[i]);
+            }
+        }for (int i = arrThird.length - 1; i >=0; i--) {
+            if (i != 0) {
+                System.out.print(arrThird[i] + ", ");
+            } else {
+                System.out.println(arrThird[i]);
+            }
         }
-        System.out.println(arrSecond[counter]);
-        for (counter = arrThird.length - 1; counter >= 1; counter--) {
-            System.out.print(arrThird[counter] + ", ");
-        }
-        System.out.println(arrThird[counter]);
 
         System.out.println();
         System.out.printf("Задача 4 %n");
@@ -41,6 +63,12 @@ public class Main {
                 arrFirst[i] += 1;
             }
         }
-        System.out.println(Arrays.toString(arrFirst));
+        for (int i = 0; i < arrFirst.length; i++) {
+            if (i != arrFirst.length - 1) {
+                System.out.print(arrFirst[i] + ", ");
+            } else {
+                System.out.println(arrFirst[i]);
+            }
+        }
     }
 }
